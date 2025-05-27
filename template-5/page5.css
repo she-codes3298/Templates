@@ -5,10 +5,15 @@
         }
 
         body {
+        /*font-family: "Playfair Display", serif;
         font-family: "Playfair Display", serif;
+        font-style: ExtraBold 800  ;*/
+        font-family: "Lora", serif;
+        
   
  
-            /*font-family: "Times New Roman", serif;*/
+            /*font-family: "Times New Roman", serif;
+            font-style:Light 300 Italic ;*/
             
             font-size: 11pt;
             line-height: 1.2;
@@ -26,7 +31,7 @@
 
         .header h1 {
             font-size: 22pt;
-            font-weight: 550;
+            font-weight: 500;
             
             letter-spacing: 1px;
         }
@@ -59,32 +64,37 @@
 
         .subsection-title {
             font-weight: 550;
-            font-size: 10pt;
+            font-size: 12pt;
+            margin-left: 10pt;
         }
 
         .subsection-date {
             font-size: 10pt;
-            font-style: italic;
+            
+            
         }
 
         .subsection-subtitle {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            font-style: italic;
+            
             font-size: 10pt;
             margin-bottom: 5pt;
+            font-style: italic;
+            margin-left: 10pt;
         }
 
         .bullet-list {
-            margin-left: 15pt;
+            margin-left: 18pt;
             margin-bottom: 5pt;
         }
 
         .bullet-item {
             margin-bottom: 2pt;
-            font-size: 10pt;
+            font-size: 11pt;
             line-height: 1.3;
+            margin-left: 5pt;
         }
 
         .bullet-item::before {
