@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Ryan - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 11pt;
+            line-height: 1.2;
+            color: #000;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20pt;
+        }
+
+        .header h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin-bottom: 15pt;
+        }
+
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5pt;
+            padding-bottom: 2pt;
+            border-bottom: 1px solid #000;
+        }
+
+        .subsection {
+            margin-bottom: 10pt;
+        }
+
+        .subsection-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2pt;
+        }
+
+        .subsection-title {
+            font-weight: bold;
+            font-size: 11pt;
+        }
+
+        .subsection-date {
+            font-size: 10pt;
+            font-style: italic;
+        }
+
+        .subsection-subtitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-style: italic;
+            font-size: 10pt;
+            margin-bottom: 5pt;
+        }
+
+        .bullet-list {
+            margin-left: 15pt;
+            margin-bottom: 5pt;
+        }
+
+        .bullet-item {
+            margin-bottom: 2pt;
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+
+        .bullet-item::before {
+            content: "•";
+            margin-right: 8pt;
+        }
+
+        .skills-section {
+            margin-bottom: 8pt;
+        }
+
+        .skills-item {
+            font-size: 10pt;
+            margin-bottom: 4pt;
+        }
+
+        .skills-label {
+            font-weight: bold;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 10pt;
+            margin-top: 15pt;
+            padding-top: 10pt;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .contact-info a:hover {
+            color: #333;
+        }
+
+        .award-subsection {
+            margin-bottom: 8pt;
+        }
+
+        .award-subsection .subsection-header {
+            margin-bottom: 0;
+        }
+
+        .award-subsection .bullet-list {
+            margin-top: 0;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+            
+            .contact-info {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Andrew Ryan</h1>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="subsection">
+            <div class="subsection-header">
+                <div class="subsection-title">Brooklyn Technical High School</div>
+                <div class="subsection-date">Brooklyn, NY</div>
+            </div>
+            <div class="subsection-subtitle">
+                <div>GPA 3.76, Class rank 63/350, SAT 1510</div>
+                <div>Sept. 2021 -- Jun 2025</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Extracurricular Activities</div>
+        
+        <div class="subsection">
+            <div class="subsection-header">
+                <div class="subsection-title">Student Government</div>
+                <div class="subsection-date">Sept. 2023 -- Jun. 2024</div>
+            </div>
+            <div class="subsection-subtitle">
+                <div>Treasurer</div>
+                <div>Brooklyn, NY</div>
+            </div>
+            <div class="bullet-list">
+                <div class="bullet-item">Developed budget proposals, collaborating with the student government team to plan major school events.</div>
+                <div class="bullet-item">Organized and led fundraising events, <strong>raising over $5,000</strong> for school activities and projects.</div>
+                <div class="bullet-item">Managed the student government budget, ensuring accurate tracking and allocation of funds.</div>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <div class="subsection-header">
+                <div class="subsection-title">Math Team</div>
+                <div class="subsection-date">Sept. 2022 -- Present</div>
+            </div>
+            <div class="subsection-subtitle">
+                <div>Team Captain</div>
+                <div>Brooklyn, NY</div>
+            </div>
+            <div class="bullet-list">
+                <div class="bullet-item">Competed in regional, state, and national-level math competitions <strong>(NYCIML, NYCMTS)</strong>.</div>
+                <div class="bullet-item">Facilitated weekly study sessions to discuss high-level <strong>Probability Theory, Geometry & Algebra</strong>.</div>
+                <div class="bullet-item">Led a 26-member math team as captain, overseeing strategy development and competition preparation.</div>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <div class="subsection-header">
+                <div class="subsection-title">Varsity Swim Team</div>
+                <div class="subsection-date">Sep. 2021 -- June 2024</div>
+            </div>
+            <div class="subsection-subtitle">
+                <div>Team Captain</div>
+                <div>Brooklyn, NY</div>
+            </div>
+            <div class="bullet-list">
+                <div class="bullet-item">Led the varsity swim team to its <strong>inaugural section championship</strong> through leadership and strategic planning.</div>
+                <div class="bullet-item">Mentored junior team members, providing guidance on proper techniques, race preparation, and sportsmanship.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Experience</div>
+        
+        <div class="subsection">
+            <div class="subsection-header">
+                <div class="subsection-title">FlexiDip</div>
+                <div class="subsection-date">June 2024 -- Present</div>
+            </div>
+            <div class="subsection-subtitle">
+                <div>Co-Founder</div>
+                <div>Ann Arbor, MI</div>
+            </div>
+            <div class="bullet-list">
+                <div class="bullet-item"><strong>Co-founded startup</strong> specializing in adjustable dipping containers, optimizing buffalo wing dining experience.</div>
+                <div class="bullet-item">Developed minimum viable product(MVP) capable of early-stage revenue generation.</div>
+                <div class="bullet-item">Received positive feedback from established brands like Buffalo Wild Wings for innovative sauce holder designs.</div>
+                <div class="bullet-item">Validated startup idea through market research and interview feedback as a part of Launch-X U-Michigan.</div>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <div class="subsection-header">
+                <div class="subsection-title">Private Math Tutor</div>
+                <div class="subsection-date">Sept. 2021 -- Present</div>
+            </div>
+            <div class="subsection-subtitle">
+                <div>Team Captain</div>
+                <div>Brooklyn, NY</div>
+            </div>
+            <div class="bullet-list">
+                <div class="bullet-item">Provided personalized tutoring sessions in algebra, calculus, and geometry to elementary & middle-school students</div>
+                <div class="bullet-item">Developed lesson plans for diverse learning styles, leading to improvements by <strong>upwards of 1.5 letter grades</strong>.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Awards</div>
+        
+        <div class="award-subsection">
+            <div class="subsection-header">
+                <div class="subsection-title">Speedo Scholastic All-American</div>
+                <div class="subsection-date">Aug. 2023 -- Present</div>
+            </div>
+            <div class="bullet-list">
+                <div class="bullet-item">National award given to student-athletes who achieve a <strong>national time standard</strong> while maintaining a 3.5+ GPA.</div>
+            </div>
+        </div>
+
+        <div class="award-subsection">
+            <div class="subsection-header">
+                <div class="subsection-title">National Junior Honor Society</div>
+                <div class="subsection-date">June 2023 -- Present</div>
+            </div>
+            <div class="bullet-list">
+                <div class="bullet-item">Award presented to students with outstanding achievements in academics, leadership, and community service.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Classes</div>
+        <div class="skills-section">
+            <div class="skills-item">
+                <span class="skills-label">Courses</span>: AP Calculus BC, AP Chemistry, AP Physics, AP World History, AP U.S. History, AP Statistics, AP Literature
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills & Interests</div>
+        <div class="skills-section">
+            <div class="skills-item">
+                <span class="skills-label">Skills</span>: Probability Theory, Web Design, Microsoft Excel, Microsoft Office
+            </div>
+            <div class="skills-item">
+                <span class="skills-label">Interests</span>: Photography, Creative Writing, Archery, New York Knicks
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        123-456-7890 | 
+        <a href="mailto:andrew@gmail.com">andrew@gmail.com</a> | 
+        <a href="#">linkedin.com/in/andrew</a>
+    </div>
+</body>
+</html>

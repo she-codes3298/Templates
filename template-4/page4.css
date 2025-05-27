@@ -1,0 +1,235 @@
+  *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /*font-family: 'Palatino', 'Book Antiqua', 'Georgia', serif;*/
+            
+           font-family: "Ancizar Serif", serif;
+ 
+  
+  font-style: Light 300 Italic;
+
+
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #333;
+            background-color: white;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 0.8cm 1.2cm 1cm 1.4cm;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 0.2em;
+        }
+
+        .header .contact-info {
+            font-size: 0.9em;
+            margin-bottom: 0.3em;
+        }
+
+        .header .social-links {
+            font-size: 0.9em;
+            margin-bottom: 0.3em;
+        }
+
+        .header .address {
+            font-size: 0.9em;
+        }
+
+        .header a {
+            color: #00008B;
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.05em;
+        }
+
+        .ieee-icon {
+            display: inline-block;
+            width: 1.3em;
+            height: 1.3em;
+            vertical-align: -0.3em;
+        }
+
+        .section {
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        .section-title {
+           
+            font-size: 1.1em;
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+            margin-bottom: 0.5em;
+        }
+
+        .objective {
+            font-size: 0.9em;
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+
+        .experience-item, .education-item, .project-item, .award-item, .leadership-item, .volunteer-item {
+            margin-bottom: 1.2em;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.3em;
+        }
+
+        .item-title {
+            font-weight: bold;
+            flex: 1;
+        }
+
+        .item-date {
+            font-style: italic;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-size: 0.85em;
+            margin-bottom: 0.3em;
+        }
+
+        .item-details {
+            list-style-type: disc;
+            margin-left: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .item-details li {
+            margin-bottom: 0.3em;
+        }
+
+        .skills-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 0.8em;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+
+        .publications {
+            font-size: 0.9em;
+        }
+
+        .publications-legend {
+            color: #00008B;
+            font-size: 0.75em;
+            text-align: right;
+            margin-bottom: 0.3em;
+        }
+
+        .publications ol {
+            counter-reset: item;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .publications li {
+            margin-bottom: 0.8em;
+            position: relative;
+            padding-left: 2.5em;
+        }
+
+        .publications li::before {
+            content: '[' counter(item) ']';
+            counter-increment: item;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .publications .conference::before { content: '[C.' counter(item) ']'; }
+        .publications .submission::before { content: '[S.' counter(item) ']'; }
+        .publications .patent::before { content: '[P.' counter(item) ']'; }
+        .publications .journal::before { content: '[J.' counter(item) ']'; }
+
+        .membership-item, .certification-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5em;
+        }
+
+        .membership-title, .certification-title {
+            font-weight: bold;
+        }
+
+        .membership-date, .certification-date {
+            font-style: italic;
+            font-size: 0.85em;
+        }
+
+        .additional-info {
+            font-size: 0.9em;
+        }
+
+        .additional-info p {
+            margin-bottom: 0.5em;
+        }
+
+        .references ol {
+            list-style: decimal;
+            margin-left: 1.5em;
+        }
+
+        .references li {
+            margin-bottom: 1em;
+            font-size: 0.9em;
+        }
+
+        .reference-name {
+            font-weight: bold;
+        }
+
+        .reference-relationship {
+            font-style: italic;
+        }
+
+        .globe-icon {
+            color: #00008B;
+            margin-left: 0.3em;
+        }
+
+        @media print {
+            body {
+                max-width: none;
+                margin: 0;
+                padding: 0.8cm 1.2cm 1cm 1.4cm;
+            }
+        }

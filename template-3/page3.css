@@ -1,0 +1,219 @@
+/* CSS equivalent of mteck.sty */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Font imports - approximating CormorantGaramond and charter */
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400&display=swap');
+
+        /* Color definitions */
+        :root {
+            --accent-title: #0e6e55;
+            --accent-text: #0e6e55;
+            --accent-line: #a16f0b;
+            --text-color: #000;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', 'Charter', 'Times New Roman', serif;
+            font-size: 10pt;
+            line-height: 1.2;
+            color: var(--text-color);
+            background-color: white;
+            
+            /* LaTeX margins adjustment equivalent */
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.7in 0.7in 0.5in 0.7in;
+            
+            /* ATS readability */
+            text-rendering: optimizeLegibility;
+        }
+
+        /* Document title styling */
+        .document-title {
+            text-align: center;
+            margin-bottom: 15pt;
+        }
+
+        .document-title h1 {
+            font-size: 28pt;
+            color: var(--accent-title);
+            font-weight: 500;
+            margin-bottom: 10pt;
+        }
+
+        .document-title hr {
+            border: none;
+            height: 1px;
+            background-color: var(--accent-line);
+            margin: 2pt 0;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            margin: 2pt 0;
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 15pt;
+        }
+
+        .section-title {
+            font-size: 12pt;
+            font-weight: 540;
+            color: var(--accent-text);
+            margin-bottom: 5pt;
+            padding-bottom: 2pt;
+            border-bottom: 1px solid var(--accent-line);
+        }
+
+        /* Tiny section (inline with separator) */
+        .tiny-section {
+            font-size: 12pt;
+            font-weight: 540;
+            color: var(--accent-text);
+            margin-bottom: 8pt;
+             border-bottom: 1px solid var(--accent-line);
+        }
+        .company{
+        margin-bottom:0.3em;
+        }
+
+        .tiny-section .separator {
+            color: var(--accent-line);
+            margin-left: 5pt;
+        }
+
+        /* Heading styles */
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-left: 10pt;
+            margin-bottom: 2pt;
+        }
+
+        .heading-bf {
+            font-weight: bold;
+        }
+
+        .heading-it {
+            font-style: italic;
+        }
+
+        /* Resume list styling */
+        .resume-list {
+            margin: -7pt 0 0 30pt;
+            padding: 0;
+            list-style: none;
+        }
+
+        .resume-list li {
+            margin-bottom: -2pt;
+            padding-top: 1pt;
+            position: relative;
+        }
+
+        .resume-list li:before {
+            content: "--";
+            position: absolute;
+            left: -15pt;
+        }
+
+        /* Item title styling */
+        .item-title {
+            text-decoration: underline;
+            font-weight: normal;
+            margin: 4pt 0;
+            list-style: none;
+        }
+
+        .item-title:before {
+            content: none !important;
+        }
+
+        /* Skills section - multicol equivalent */
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            margin-top: -2pt;
+        }
+
+        .skills-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: -2pt;
+            padding-top: 1pt;
+            padding-left: 75pt;
+            position: relative;
+        }
+
+        .skills-list .skill-category {
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            width: 70pt;
+        }
+
+        /* Spacing adjustments */
+        .vspace-3pt {
+            margin-top: 3pt;
+        }
+
+        .vspace-5pt {
+            margin-top: 5pt;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                max-width: none;
+                padding: 0.5in;
+                font-size: 9pt;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            a {
+                color: var(--text-color) !important;
+                text-decoration: none !important;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 0.5in 0.3in;
+            }
+            
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                font-size: 9pt;
+                line-height: 1.4;
+            }
+        }

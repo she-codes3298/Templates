@@ -1,0 +1,144 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+        font-family: "Playfair Display", serif;
+  
+ 
+            /*font-family: "Times New Roman", serif;*/
+            
+            font-size: 11pt;
+            line-height: 1.2;
+            color: #000;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20pt;
+        }
+
+        .header h1 {
+            font-size: 22pt;
+            font-weight: 550;
+            
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin-bottom: 15pt;
+        }
+
+        .section-title {
+            font-size: 13pt;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-variant: small-caps;
+            letter-spacing: 0.5px;
+            margin-bottom: 5pt;
+            padding-bottom: 2pt;
+            border-bottom: 1px solid #000;
+        }
+
+        .subsection {
+            margin-bottom: 10pt;
+        }
+
+        .subsection-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2pt;
+        }
+
+        .subsection-title {
+            font-weight: 550;
+            font-size: 10pt;
+        }
+
+        .subsection-date {
+            font-size: 10pt;
+            font-style: italic;
+        }
+
+        .subsection-subtitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-style: italic;
+            font-size: 10pt;
+            margin-bottom: 5pt;
+        }
+
+        .bullet-list {
+            margin-left: 15pt;
+            margin-bottom: 5pt;
+        }
+
+        .bullet-item {
+            margin-bottom: 2pt;
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+
+        .bullet-item::before {
+            content: "•";
+            margin-right: 8pt;
+        }
+
+        .skills-section {
+            margin-bottom: 8pt;
+        }
+
+        .skills-item {
+            font-size: 10pt;
+            margin-bottom: 4pt;
+        }
+
+        .skills-label {
+            font-weight: bold;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 10pt;
+            margin-top: 15pt;
+            padding-top: 10pt;
+        }
+
+        .contact-info a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        .contact-info a:hover {
+            color: #333;
+        }
+
+        .award-subsection {
+            margin-bottom: 8pt;
+        }
+
+        .award-subsection .subsection-header {
+            margin-bottom: 0;
+        }
+
+        .award-subsection .bullet-list {
+            margin-top: 0;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+            
+            .contact-info {
+                page-break-inside: avoid;
+            }
+        }
