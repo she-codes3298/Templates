@@ -1,0 +1,193 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 11pt;
+            line-height: 1.1;
+            color: #000;
+            background: #fff;
+             margin: 0 auto;
+               max-width: 800px;
+               padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+          
+            padding-bottom: 10px;
+        }
+
+        .name {
+            font-size: 22pt;
+            font-weight: 500;
+            margin-bottom: 8px;
+            letter-spacing: 1.5px;
+            line-height:1;
+        }
+
+        .contact-info {
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+
+        .contact-line {
+            margin-bottom: 2px;
+        }
+
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+            margin-bottom: 8px;
+            opacity:0.8;
+           
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 12px;
+              margin-left: 15pt;
+              opacity:0.9;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+        }
+
+        .institution, .company {
+            font-weight: bold;
+           
+            
+        }
+        .company,.position
+        {
+           margin-left:12pt;
+          }
+
+        .date {
+            
+            font-size: 10pt;
+        }
+
+        .degree, .position {
+            margin-bottom: 1px;
+        }
+
+        .gpa, .department {
+            font-size: 10pt;
+        }
+
+        .technical-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+              margin-left: 15pt;
+        }
+
+        .technical-table td {
+            padding: 2px 0;
+            vertical-align: top;
+        }
+
+        .technical-table td:first-child {
+            font-weight: bold;
+            opacity:0.8;
+            width: 25%;
+            padding-right: 20px;
+        }
+
+        .experience-list {
+            margin-top: 5px;
+            padding-left: 15px;
+        }
+
+        .experience-list li {
+            margin-bottom: 3px;
+            list-style-type: disc;
+        }
+
+        .courses-table {
+            width: 100%;
+            margin-top: 5px;
+              margin-left: 15pt;
+        }
+
+        .courses-table td {
+            padding: 1px 0;
+            vertical-align: top;
+        }
+
+        .courses-table .core-col {
+            width: 33%;
+            font-weight: bold;
+            opacity:0.8;
+        }
+
+        .courses-table .other-col {
+            width: 33%;
+            font-weight: bold;
+            opacity:0.8;
+        }
+
+        .courses-table .course-item {
+            font-weight: normal;
+            
+        }
+
+        .certification-item {
+            margin-bottom: 8px;
+              margin-left: 15pt;
+        }
+
+        .cert-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .cert-title {
+            font-weight: bold;
+            opacity:0.8;
+        }
+
+        .cert-date {
+            font-style: italic;
+            font-size: 10pt;
+        }
+
+        .cert-org {
+            font-size: 10pt;
+            margin-top: 1px;
+        }
+
+        .extra-list {
+            margin-top: 5px;
+            padding-left: 15px;
+            margin-left:8pt;
+        }
+
+        .extra-list li {
+            margin-bottom: 5px;
+            list-style-type: none;
+        }
+
+        @media print {
+            body {
+                margin: 0.5in 0.6in;
+                font-size: 10pt;
+            }
+        }

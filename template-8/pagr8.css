@@ -1,0 +1,173 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+          
+            padding-bottom: 20px;
+        }
+
+        .name {
+            font-size: 27px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+            margin-left:15pt;
+        }
+
+        .institution {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .date {
+            float: right;
+            font-size: 14px;
+        }
+
+        .degree {
+            font-size: 14px;
+            margin-top: 2px;
+        }
+
+        .department {
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 2px;
+        }
+
+        .objective-text {
+            font-size: 14px;
+            text-align: justify;
+            line-height: 1.5;
+            margin-left:15pt;
+        }
+
+        .project-item {
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 2px;
+            margin-left:15pt;
+        }
+
+        .project-description {
+            font-size: 14px;
+            text-align: justify;
+            line-height: 1.5;
+            margin-left:15pt;
+        }
+
+        .skills-list {
+            font-size: 14px;
+            line-height: 1.3;
+            margin-left:15pt;
+            font-weight:550;
+        }
+
+        .work-item {
+            margin-bottom: 15px;
+        }
+
+        .work-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-weight: bold;
+            font-size: 14px;
+            margin-left:15pt;
+        }
+
+        .work-date {
+            font-size: 14px;
+        }
+
+        .position {
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 8px;
+            margin-left:15pt;
+        }
+
+        .work-description {
+            font-size: 14px;
+            margin-left: 15px;
+            line-height: 1.5;
+        }
+
+        .achievement-item {
+            font-size: 14px;
+            margin-bottom: 5px;
+            margin-left:15pt;
+        }
+
+        .activity-item {
+            font-size: 14px;
+            margin-bottom: 5px;
+            margin-left: 15pt;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media print {
+            body {
+                padding: 20px;
+                font-size: 12px;
+            }
+            
+            .name {
+                font-size: 20px;
+            }
+            
+            .section-title {
+                font-size: 14px;
+            }
+        }
