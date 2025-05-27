@@ -1,216 +1,258 @@
-  *{
+ * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            /*font-family: 'Palatino', 'Book Antiqua', 'Georgia', serif;*/
-            
-           font-family: "Ancizar Serif", serif;
- 
-  
-  font-style: Light 300 Italic;
-
-
+            font-family: 'TeX Gyre Pagella', 'Palatino', 'Book Antiqua', serif;
             font-size: 11pt;
             line-height: 1.4;
-            color: #333;
-            background-color: white;
-            max-width: 210mm;
+            color: #000;
+            background: #fff;
+            max-width: 8.27in;
             margin: 0 auto;
             padding: 0.8cm 1.2cm 1cm 1.4cm;
         }
 
+        /* Header styles */
         .header {
             text-align: center;
             margin-bottom: 1em;
         }
 
         .header h1 {
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: bold;
-            margin-bottom: 0.2em;
+            margin-bottom: 0.3em;
         }
 
         .header .contact-info {
             font-size: 0.9em;
-            margin-bottom: 0.3em;
+            margin-bottom: 0.2em;
+        }
+
+        .header .contact-info a {
+            color: #00008b;
+            text-decoration: none;
+        }
+
+        .header .contact-info a:hover {
+            text-decoration: underline;
         }
 
         .header .social-links {
             font-size: 0.9em;
-            margin-bottom: 0.3em;
+            margin-bottom: 0.2em;
+        }
+
+        .header .social-links a {
+            color: #00008b;
+            text-decoration: none;
+            margin: 0 0.2em;
+        }
+
+        .header .social-links .fa {
+            margin-right: 0.2em;
         }
 
         .header .address {
             font-size: 0.9em;
         }
 
-        .header a {
-            color: #00008B;
-            text-decoration: none;
-        }
-
-        .header a:hover {
-            text-decoration: underline;
-        }
-
-        .social-icon {
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            vertical-align: -0.05em;
-        }
-
-        .ieee-icon {
-            display: inline-block;
-            width: 1.3em;
-            height: 1.3em;
-            vertical-align: -0.3em;
-        }
-
+        /* Section styles */
         .section {
-            margin-top: 1.5em;
-            margin-bottom: 1em;
+            margin-bottom: 1.5em;
         }
 
         .section-title {
-           
+            
             font-size: 1.1em;
             font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
             border-bottom: 1px solid #000;
             margin-bottom: 0.5em;
         }
 
-        .objective {
-            font-size: 0.9em;
+        /* Objective section */
+        .objective-text {
+            font-size: 0.95em;
             text-align: justify;
-            margin-bottom: 1em;
+            line-height: 1.3;
         }
 
-        .experience-item, .education-item, .project-item, .award-item, .leadership-item, .volunteer-item {
-            margin-bottom: 1.2em;
+        /* Experience, Education, Projects sections */
+        .item {
+            margin-bottom: 1em;
         }
 
         .item-header {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 0.3em;
+            margin-bottom: 0.2em;
         }
 
         .item-title {
             font-weight: bold;
-            flex: 1;
-        }
-
-        .item-date {
-            font-style: italic;
-            font-size: 0.85em;
-            white-space: nowrap;
+            font-size: 1em;
         }
 
         .item-subtitle {
             font-style: italic;
-            font-size: 0.85em;
-            margin-bottom: 0.3em;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .item-date {
+            font-style: italic;
+            font-size: 0.9em;
+            white-space: nowrap;
+            margin-left: 1em;
         }
 
         .item-details {
             list-style-type: disc;
-            margin-left: 1.5em;
-            margin-bottom: 0.5em;
+            margin-left: 1.2em;
+            margin-top: 0.3em;
         }
 
         .item-details li {
-            margin-bottom: 0.3em;
+            margin-bottom: 0.2em;
+            font-size: 0.95em;
         }
 
+        /* Publications section */
+        .publications-note {
+            text-align: right;
+            font-size: 0.8em;
+            color: #00008b;
+            margin-bottom: 0.5em;
+        }
+
+        .publication-list {
+            counter-reset: pub-counter;
+        }
+
+        .publication-item {
+            margin-bottom: 0.8em;
+            font-size: 0.9em;
+            position: relative;
+            padding-left: 2em;
+        }
+
+        .publication-item::before {
+            content: "[" attr(data-type) "." counter(pub-counter) "]";
+            counter-increment: pub-counter;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .publication-item.conference::before {
+            content: "[C." counter(pub-counter) "]";
+        }
+
+        .publication-item.submission::before {
+            content: "[S." counter(pub-counter) "]";
+        }
+
+        .publication-item.patent::before {
+            content: "[P." counter(pub-counter) "]";
+        }
+
+        .publication-item.journal::before {
+            content: "[J." counter(pub-counter) "]";
+        }
+
+        .publication-title {
+            font-weight: bold;
+        }
+
+        .publication-venue {
+            font-style: italic;
+        }
+
+        /* Skills section */
         .skills-list {
-            list-style: none;
-            margin-left: 0;
+            list-style: disc;
+            margin-left: 10pt;
+            
+           
         }
 
         .skills-list li {
-            margin-bottom: 0.8em;
+            margin-bottom: 0.4em;
+            font-size: 0.95em;
         }
 
         .skill-category {
             font-weight: bold;
             display: inline-block;
-            margin-right: 0.5em;
+            min-width: 200px;
         }
 
-        .publications {
-            font-size: 0.9em;
+        /* Awards, Leadership, Volunteer sections */
+        .award-item, .leadership-item, .volunteer-item {
+            margin-bottom: 1em;
         }
 
-        .publications-legend {
-            color: #00008B;
-            font-size: 0.75em;
-            text-align: right;
-            margin-bottom: 0.3em;
-        }
-
-        .publications ol {
-            counter-reset: item;
-            list-style: none;
-            margin-left: 0;
-        }
-
-        .publications li {
-            margin-bottom: 0.8em;
-            position: relative;
-            padding-left: 2.5em;
-        }
-
-        .publications li::before {
-            content: '[' counter(item) ']';
-            counter-increment: item;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .publications .conference::before { content: '[C.' counter(item) ']'; }
-        .publications .submission::before { content: '[S.' counter(item) ']'; }
-        .publications .patent::before { content: '[P.' counter(item) ']'; }
-        .publications .journal::before { content: '[J.' counter(item) ']'; }
-
-        .membership-item, .certification-item {
+        .award-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0.5em;
+            align-items: flex-start;
+            margin-bottom: 0.2em;
         }
 
-        .membership-title, .certification-title {
+        /* Memberships and Certifications */
+        .membership-item, .cert-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.3em;
+            font-size: 0.95em;
+        }
+
+        .membership-name, .cert-name {
             font-weight: bold;
         }
 
-        .membership-date, .certification-date {
+        .membership-date, .cert-date {
             font-style: italic;
-            font-size: 0.85em;
         }
 
+        /* Additional Information */
         .additional-info {
-            font-size: 0.9em;
+            font-size: 0.95em;
+            line-height: 1.3;
         }
 
         .additional-info p {
             margin-bottom: 0.5em;
         }
 
-        .references ol {
-            list-style: decimal;
-            margin-left: 1.5em;
+        .info-label {
+            font-weight: bold;
         }
 
-        .references li {
+        /* References */
+        .references-list {
+            counter-reset: ref-counter;
+        }
+
+        .reference-item {
             margin-bottom: 1em;
             font-size: 0.9em;
+            position: relative;
+            padding-left: 1.5em;
+        }
+
+        .reference-item::before {
+            content: counter(ref-counter) ".";
+            counter-increment: ref-counter;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
         }
 
         .reference-name {
@@ -219,17 +261,33 @@
 
         .reference-relationship {
             font-style: italic;
+            margin-top: 0.2em;
         }
 
-        .globe-icon {
-            color: #00008B;
-            margin-left: 0.3em;
+        /* Links */
+        a {
+            color: #00008b;
+            text-decoration: none;
         }
 
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Font Awesome icons */
+        .fa-globe {
+            font-size: 0.8em;
+        }
+
+        /* Print styles */
         @media print {
             body {
-                max-width: none;
                 margin: 0;
-                padding: 0.8cm 1.2cm 1cm 1.4cm;
+                padding: 0.5in;
+                max-width: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
             }
         }
