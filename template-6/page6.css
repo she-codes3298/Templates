@@ -6,8 +6,8 @@
 
         body {
             font-family: "Times New Roman", serif;
-            font-size: 12pt;
-            line-height: 1.4;
+            font-size: 11pt;
+            line-height: 1.2;
             color: #000;
             max-width: 8.5in;
             margin: 0 auto;
@@ -24,9 +24,9 @@
 
         .header h1 {
             font-size: 18pt;
-            font-weight: bold;
+            font-weight: 500;
             letter-spacing: 2px;
-            margin-bottom: 8pt;
+            margin-bottom: 5pt;
         }
 
         .header .address-line {
@@ -39,17 +39,17 @@
         }
 
         .section-title {
-            font-size: 14pt;
+            font-size: 12pt;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 8pt;
+            margin-bottom: 7pt;
             padding-bottom: 3pt;
             border-bottom: 1px solid #000;
         }
 
         .education-entry {
-            margin-bottom: 12pt;
+            margin-bottom: 8pt;
             margin-left:15pt;
         }
 
@@ -88,7 +88,7 @@
 
         .education-department {
             font-size: 11pt;
-            margin-bottom: 8pt;
+            margin-bottom: 5pt;
         }
 
         .objective-text {
@@ -132,11 +132,12 @@
         .coursework-item {
             margin-bottom: 4pt;
             font-size: 11pt;
-            position: relative;
+            line-height: 1.5;
+            
         }
 
         .coursework-item::before {
-            content: "";
+            
             position: absolute;
             left: -15pt;
         }
@@ -148,11 +149,11 @@
         .strengths-item {
             margin-bottom: 4pt;
             font-size: 11pt;
-            position: relative;
+            line-height: 1.5;
         }
 
         .strengths-item::before {
-            content: "";
+            
             position: absolute;
             left: -15pt;
         }
@@ -165,11 +166,11 @@
             margin-bottom: 2pt;
             font-size: 11pt;
             position: relative;
-            line-height: 1.3;
+            line-height: 1.5;
         }
 
         .extracurricular-item::before {
-            content: "";
+        
             position: absolute;
             left: -15pt;
         }
@@ -181,19 +182,16 @@
         .personal-item {
             margin-bottom: 4pt;
             font-size: 11pt;
-            position: relative;
+            line-height: 1.5;
         }
 
         .personal-item::before {
-            content: "";
+            
             position: absolute;
             left: -15pt;
         }
 
-        .page-break {
-            page-break-before: always;
-            margin-top: 30pt;
-        }
+    
 
         @media print {
             body {
