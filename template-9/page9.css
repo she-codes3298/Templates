@@ -6,7 +6,7 @@
 
         body {
             font-family: "Times New Roman", serif;
-            font-size: 11pt;
+            font-size: 10pt;
             line-height: 1.1;
             color: #000;
             background: #fff;
@@ -54,22 +54,38 @@
             opacity:0.8;
            
         }
-
-        .education-item, .experience-item {
+        .experience-item
+        {
             margin-bottom: 12px;
-              margin-left: 15pt;
-              opacity:0.9;
+            opacity:0.9;
         }
-
-        .item-header {
+        .exp{
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            margin-left:10pt;
+        }
+
+        .education-item{
+            margin-bottom: 12px;
+              margin-left: 15pt;
+              opacity:0.9;
+              display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.2in;
+            
+        }
+
+        .item-header {
+              flex: 1;
+            
             
         }
 
         .institution, .company {
             font-weight: bold;
+            opacity:0.8;
            
             
         }
@@ -105,20 +121,20 @@
 
         .technical-table td:first-child {
             font-weight: bold;
-            opacity:0.8;
+            opacity:0.7;
             width: 25%;
             padding-right: 20px;
         }
 
         .experience-list {
-            margin-top: 5px;
-            padding-left: 15px;
-        }
+           margin-top: 5px;
+           margin-left: 10pt;
+}
 
-        .experience-list li {
-            margin-bottom: 3px;
-            list-style-type: disc;
-        }
+        .experience-list div {  /* Changed from 'li' to 'div' */
+             margin-bottom: 3px;
+             list-style-type: none;
+            }
 
         .courses-table {
             width: 100%;
@@ -161,7 +177,7 @@
 
         .cert-title {
             font-weight: bold;
-            opacity:0.8;
+            opacity:0.7;
         }
 
         .cert-date {
