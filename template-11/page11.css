@@ -6,7 +6,7 @@
         
         body {
             font-family: "Times New Roman", Times, serif;
-            font-size: 11pt;
+            font-size: 10pt;
             line-height: 1.2;
             color: #000;
             max-width: 8.5in;
@@ -19,13 +19,14 @@
         .header {
             text-align: center;
             margin-bottom: 0.5in;
-            border-bottom: 1px solid #000;
+            
             padding-bottom: 0.2in;
         }
         
         .name {
             font-size: 20pt;
             font-weight: bold;
+            opacity:0.8;
             margin-bottom: 0.1in;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -48,6 +49,7 @@
         .section-title {
             font-size: 12pt;
             font-weight: bold;
+            opacity:0.8;
             text-transform: uppercase;
             border-bottom: 1px solid #000;
             padding-bottom: 2px;
@@ -57,7 +59,8 @@
         
         /* Education Section */
         .education-item {
-            margin-bottom: 0.15in;
+    
+            margin-left: 15pt;;
         }
         
         .education-header {
@@ -69,10 +72,11 @@
         
         .institution {
             font-weight: bold;
+            opacity:0.8;
         }
         
         .date {
-            font-style: italic;
+            
         }
         
         .degree-line {
@@ -91,15 +95,17 @@
         .skills-table {
             width: 100%;
             border-collapse: collapse;
+            margin-left:15pt;
         }
         
         .skills-table td {
-            padding: 3px 0;
+            
             vertical-align: top;
         }
         
         .skills-table td:first-child {
             font-weight: bold;
+            opacity: 0.8;
             width: 150px;
             padding-right: 20px;
         }
@@ -107,6 +113,7 @@
         /* Experience Section */
         .experience-item {
             margin-bottom: 0.2in;
+            margin-left: 15pt;
         }
         
         .experience-header {
@@ -118,6 +125,7 @@
         
         .company {
             font-weight: bold;
+            opacity: 0.8;
         }
         
         .position-line {
@@ -128,7 +136,8 @@
         }
         
         .position {
-            font-weight: bold;
+            
+            font-style: italic;
         }
         
         .experience-item ul {
@@ -143,6 +152,7 @@
         /* Position of Responsibility */
         .responsibility-item {
             margin-bottom: 0.15in;
+            margin-left:15pt;
         }
         
         .responsibility-header {
@@ -154,6 +164,7 @@
         
         .club-name {
             font-weight: bold;
+            opacity: 0.8;
         }
         
         .role-line {
@@ -165,6 +176,7 @@
         
         .role {
             font-weight: bold;
+            opacity: 0.8;
         }
         
         .college {
@@ -174,11 +186,12 @@
         /* Academic Achievements */
         .achievements ul {
             margin-left: 15px;
-            list-style-type: disc;
+            list-style-type: none;
         }
         
         .achievements li {
             margin-bottom: 3px;
+            margin-left:15pt;
         }
         
         @media print {
