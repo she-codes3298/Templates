@@ -6,7 +6,7 @@
 
         body {
             font-family: "Times New Roman", serif;
-            font-size: 11pt;
+            font-size: 10pt;
             line-height: 1.2;
             color: #000;
             background: #fff;
@@ -18,15 +18,18 @@
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 1px solid #000;
+        
             padding-bottom: 10px;
         }
 
         .name {
             font-size: 24pt;
             font-weight: bold;
+
             margin-bottom: 8px;
-            letter-spacing: 2px;
+            opacity:0.8;
+            
+            
         }
 
         .contact-info {
@@ -45,6 +48,7 @@
         .section-title {
             font-size: 12pt;
             font-weight: bold;
+            opacity:0.8;
             text-transform: uppercase;
             letter-spacing: 1px;
             border-bottom: 1px solid #000;
@@ -55,21 +59,32 @@
         .section-content {
             text-align: justify;
             line-height: 1.3;
+            margin-left:15pt;
         }
 
-        .education-item {
-            margin-bottom: 12px;
+        
+
+        
+        .education-item{
+            
+              margin-left: 15pt;
+              opacity:0.9;
+              display: flex;
+            
+            
         }
 
         .item-header {
-            display: flex;
+               display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 2px;
+            width: 100%;
         }
 
         .institution {
             font-weight: bold;
+            opacity:0.8;
+
         }
 
         .date {
@@ -87,12 +102,13 @@
 
         .technical-skills {
             line-height: 1.4;
+            margin-left:15pt;
         }
 
         .skill-item {
             margin-bottom: 3px;
             list-style-type: disc;
-            margin-left: 15px;
+            
         }
 
         .skill-item:first-child {
@@ -114,11 +130,15 @@
             list-style-type: none;
             margin-left: -15px;
         }
+        .section-content.Extra-Curricular {
+    margin-bottom: 15px; 
+}
 
         .personal-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 5px;
+            margin-left:15pt;
         }
 
         .personal-table td {
@@ -128,6 +148,7 @@
 
         .personal-table td:first-child {
             font-weight: bold;
+            opacity:0.8;
             width: 25%;
             padding-right: 20px;
         }
