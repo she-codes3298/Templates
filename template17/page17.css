@@ -1,0 +1,210 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            
+        }
+        .designation{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            
+        }
+
+        .address {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+    background-color: #e8e8e8;
+    padding: 8px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 25px 0 15px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.section-header-text {
+    display: inline-block;
+    border-bottom: 2px solid #000;  /* thickness and color of underline */
+    padding-bottom: 4px;            /* gap between text and underline */
+}
+.dotted{
+    color:#666;
+    margin-bottom: 17px;
+}
+.dotted1{
+    color:#666;
+    margin-bottom: 17px;
+    opacity: 0.7;
+}
+
+
+        .profile {
+            border-top: 3px double #333;
+            border-bottom: 3px double #333;
+        }
+
+        .profile-text {
+            font-size: 12px;
+            text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .job-entry {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .job-dates {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .job-description {
+            font-size: 12px;
+            margin-left: 15px;
+        }
+
+        .job-description ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .job-description li {
+            margin-bottom: 3px;
+            position: relative;
+            padding-left: 12px;
+        }
+
+        .job-description li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+
+        .education-entry {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+        
+
+        .education-title {
+            font-weight: bold;
+        }
+
+        .education-details {
+            font-style: italic;
+            font-size: 11px;
+            margin-left: 15px;
+            margin-top: 2px;
+        }
+
+        .skills-table {
+            width: 100%;
+            font-size: 12px;
+            border-collapse: collapse;
+        }
+
+        .skills-table td {
+            padding: 4px 0;
+            vertical-align: top;
+        }
+
+        .skill-category {
+            width: 30%;
+            font-weight: normal;
+        }
+
+        .skill-level {
+            text-align: center;
+            font-style: italic;
+            width: 15%;
+        }
+
+        .diamond {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: black;
+            transform: rotate(45deg);
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        .internship-entry {
+            margin-bottom: 15px;
+        }
+
+        .internship-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .internship-title {
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .internship-dates {
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .internship-details {
+            font-size: 11px;
+            font-style: italic;
+            margin-left: 15px;
+            margin-top: 2px;
+        }

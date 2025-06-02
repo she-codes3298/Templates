@@ -1,0 +1,208 @@
+ body {
+            font-family: Times, serif;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 60px;
+            line-height: 1.4;
+            color: #000;
+            background-color: #fff;
+            font-size: 13px;
+            
+        }
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+              padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 16px;
+            font-weight: bold;
+            opacity:0.8;
+            margin: 0 0 5px 0;
+            color: #000;
+        }
+
+        .contact-info {
+            font-size: 11px;
+            color: #000;
+            line-height: 1.2;
+        }
+
+        .section {
+    
+              border-bottom: 1px solid #000;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            opacity:0.8;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 15px 0 10px 0;
+            color: #000;
+            
+            padding-bottom: 2px;
+        }
+
+        .profile-text {
+            text-align: justify;
+            font-size: 11px;
+            line-height: 1.4;
+            
+        }
+        .profile_text{
+            flex:1;
+            line-height: 1.6;
+        }
+        .profile{
+            margin-bottom: 12px;
+        }
+
+        .job {
+            margin-bottom: 15px;
+        }
+
+        .job-header,.education-header {
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .job-title,.degree-title {
+            font-weight: bold;
+            opacity:0.8;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .job-location ,.school-location{
+            font-size: 13px;
+            font-style: italic;
+            text-align: right;
+        }
+
+        .job-date {
+            font-size: 13px;
+            font-style: italic;
+            
+    color: #555;
+        }
+        
+
+.Skill {
+  max-width: 800px;
+  margin: auto;
+}
+
+
+
+.skills-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* spacing between the two columns */
+}
+
+.skills-column {
+  flex: 1;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.skill-name {
+  font-weight: 500;
+  opacity:0.8;
+}
+
+.skill-level {
+  font-style: italic;
+  color: #555;
+}
+.Ref{
+    display: flex;
+    align-items: start;
+    gap:30px;
+}
+
+        .job-description {
+            font-size: 11px;
+            line-height: 1.3;
+            margin-left: 0;
+        }
+
+        .job-description ul {
+            margin:  0;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        .job-description li{
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+        .job-info {
+    flex: 1;
+}
+.job-meta {
+    min-width: 180px;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.education-date{
+      color: #555;
+      font-style: italic;
+
+}
+
+        
+
+       
+       
+        
+        
+
+        
+       
+        .references {
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        .reference-item {
+            margin-bottom: 8px;
+        }
+
+        .reference-name {
+            font-weight: bold;
+            opacity:0.8;
+            font-size:13px
+        }
+
+        .reference-contact {
+            font-style: italic;
+            margin-left: 0;
+        }
+        .profile{
+            display:flex;
+            align-items: start;
+            gap:30px;
+        }

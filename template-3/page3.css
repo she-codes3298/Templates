@@ -33,6 +33,15 @@
             /* ATS readability */
             text-rendering: optimizeLegibility;
         }
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+              padding: 40px 20px;
+        }
+
 
         /* Document title styling */
         .document-title {

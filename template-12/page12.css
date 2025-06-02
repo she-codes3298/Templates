@@ -1,0 +1,85 @@
+ body{
+    
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            
+            font-style: Regular 400 Italic ;
+            font-size: 10pt;
+        
+            line-height: 1.5;
+            color: #000;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.6in 0.75in;
+            background: white;
+        
+}
+.resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+              padding: 40px 20px;
+        }
+
+section{
+    margin-bottom: 0.1in;
+}
+i{
+    margin-right:10px;
+}
+.name{
+    border-bottom: 1px solid #000;
+    margin-bottom: 0.1in;
+    font-weight: bold;
+    opacity:0.8;
+}
+.head{
+    margin-left: 15pt;
+}
+.section-title{
+    font-weight:bold;
+    opacity:0.8;
+    font-size:10pt;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+     margin-bottom: 0.15in;
+    letter-spacing: 0.5px;
+}
+.exp-element,.form-element,.art-element,.com-element,.cen-element{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 15pt;
+    /* Remove justify-content: space-between */
+}
+.lang-element {
+  display: flex;
+  gap: 40px; /* space between each language pair */
+  margin-left: 15pt;
+}
+
+.lang-pair {
+  display: flex;
+  gap: 10px; /* space between language name and proficiency */
+}
+
+.bold {
+  font-weight: bold;
+  opacity:0.9;
+}
+
+
+.exp-element span:first-child,
+.form-element span:first-child,
+.art-element span:first-child,
+.com-element span:first-child,
+.lang-element span:first-child,
+.cen-element span:first-child {
+    margin-right: 20px; /* Adjust this value for desired spacing */
+    min-width: 150px; /* Optional: gives consistent width to left column */
+}
+.bold{
+    font-weight: bold;
+}

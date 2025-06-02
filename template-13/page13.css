@@ -1,0 +1,134 @@
+    body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 60px;
+            line-height: 1.4;
+            color: #333;
+            background-color: #fff;
+        }
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+              padding: 40px 20px;
+        }
+
+
+        .header {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+
+        .header .title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.3;
+        }
+
+        .summary {
+            margin-bottom: 35px;
+            text-align: justify;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 30px 0 20px 0;
+            color: #333;
+        }
+
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .job-date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .company {
+            font-style: italic;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .job-description {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .job-description p {
+            margin: 8px 0;
+        }
+
+        .skills {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .university {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .education-date {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .degree {
+            font-size: 14px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .language {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .language-note {
+            font-style: italic;
+            color: #666;
+        }
+        .job-description p {
+  margin-left: 15pt;
+}
