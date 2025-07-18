@@ -1,0 +1,321 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Nunito Sans", sans-serif;
+            font-optical-sizing: auto;
+  
+            font-style: normal;
+          font-variation-settings:
+                      "wdth" 100,
+                      "YTLC" 500;
+            line-height: 1.3;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        
+
+        .dec {
+             height: 120px; /* adjust as needed */
+             width:100%;
+             margin-right:20px;
+             background-color: #3F3F3F;
+             position: relative;
+             z-index: 3;
+            }
+
+        .header-left {
+             position: relative;
+             margin-top: -120px; /* Pull the image up to overlap `.dec` */
+             
+             z-index: 5;
+             margin-left: 30px;
+             }
+
+         .header-left img {
+             border-radius: 10px;
+             
+             position: relative;
+             z-index: 10;
+             margin-top:20px;
+             margin-left:20px;
+            }
+
+        
+
+        .header-right h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 0;
+            color:#9B8A84;
+        }
+
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border-bottom: 2px solid white;
+            padding:10px;
+            margin-bottom:10px;
+            
+        }
+
+        .contact-item {
+            font-size: 0.9em;
+            display: flex;
+            gap: 8px;
+            margin-left:23px;
+        }
+
+        .main-content {
+            display: flex;
+            min-height: 600px;
+        }
+
+        .left-column {
+            background: #9B8A84;
+            width: 35%;
+            
+            position: relative;
+        }
+
+        .right-column {
+            flex: 1;
+            padding: 30px;
+        }
+
+       .section h2{
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  width: 90%;           /* or any desired value like 80%, 600px */
+  max-width: 600px;   
+         }  /* optional, for responsiveness */
+
+
+        .left-column .section{
+            padding:0px 25px ;
+            
+            
+
+        }
+        .left-column .section h2{
+            font-size:0.9em;
+
+        }
+
+        .section h2 {
+            color: white;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+            padding-bottom: 5px;
+        }
+        .right-column .section{
+            border-bottom: 2px solid #bdacac;
+            
+        }
+
+        .section h3 {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .section p, .section li {
+            font-size: 0.9em;
+            line-height: 1.2;
+            margin-bottom: 5px;
+        }
+        .left-column .section p{
+            color:white;
+        }
+ 
+        .job-title {
+            color: #4a5568;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .company-location {
+            color: #666;
+            font-size: 0.85em;
+            margin-bottom: 5px;
+        }
+
+        .date-range {
+            color: #888;
+            font-size: 0.8em;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            margin-left:20px;
+        }
+
+        .experience-item ul {
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+
+        .experience-item li {
+            margin-bottom: 8px;
+        }
+
+        .skills-grid {
+        
+            
+            margin-top: 10px;
+        }
+
+        .skill-item {
+            
+
+            color:white;
+            font-size: 0.85em;
+            list-style: none;
+            margin-left:15px;
+            
+        
+        }
+         .skills-grid li::before{
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: white;
+            font-weight: bold;
+            padding-left:20px;
+         }
+
+        .qualification-item {
+            
+            
+            margin-bottom: 10px;
+            list-style:none;
+            color:white;
+            margin-left:10px;
+        
+        }
+        .qualification-item li::before{
+             content: "•";
+            position: absolute;
+            left: 0;
+            color: white;
+            font-weight: bold;
+            padding-left:20px;
+        }
+
+    
+
+    
+
+        .education-item {
+            margin-bottom: 20px;
+            color:black;
+            margin-left:20px;
+        }
+
+        .education-item h4 {
+            color: #333;
+            font-size: 1em;
+            margin-bottom: 3px;
+        }
+        .right-column h2{
+            color:black;
+        }
+
+        .education-item .degree {
+            color: #4a5568;
+            font-size: 0.9em;
+            margin-bottom: 2px;
+        }
+
+        .education-item .institution {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .interests-list {
+            font-size:0.85em;
+            margin-left:20px;
+        
+        }
+
+        
+         .additional-info{
+            list-style: none;
+            color:white;
+         }
+        .additional-info ul {
+            margin-left: 15px;
+            list-style:none;
+
+        }
+
+        .additional-info li::before {
+             content: "•";
+            position: absolute;
+            left: 0;
+            color: white;
+            font-weight: bold;
+            padding-left:20px;
+        }
+        h3{
+            font-size:1.1em;
+            padding:5px;
+        }
+        .contact-info {
+              color: white;
+         } 
+
+.contact-item {
+  display: flex;
+   
+  margin-bottom: 2px;
+}
+
+.contact-item img {
+  width: 18px;
+  height: 18px;
+  
+}
+
+        
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .left-column {
+                width: 100%;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info {
+                justify-content: center;
+            }
+        }
